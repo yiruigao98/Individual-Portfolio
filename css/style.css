@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    color: #F1F2F6;
+    font-size: 14pt;
+}
+
+a.skip{
+    background: white;
+    padding: 5px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+  
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background: rgba(171, 198, 207, 0.5);
+    align-items: center;
+    /* justify-content: center;
+    justify-content: space-between; */
+}
+
+
+.nav_links{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    background:#fff;
+    margin: 30px;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+    border-radius:50px;
+    position:relative;
+}
+
+.nav_links a{
+    border-radius:15px;
+    text-decoration:none;
+    color: #788;
+    text-transform:uppercase;
+    padding:10px 50px;
+    z-index:1;
+    transition-duration:3s;
+}
+
+.nav_links a:hover{
+    color: orangered;
+} 
+
+
+.nav_links a:focus{
+    border-radius:50px;
+    color: white;
+    background: #05abe0;
+    background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+    background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+    background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+}
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 12px;
+    background: rgba(171, 198, 207, 0.5);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+

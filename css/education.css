@@ -1,0 +1,95 @@
+@-webkit-keyframes logo_wiggle{
+    from{
+      width: 10%;
+    }
+    to{
+      width: 5%;
+    }
+}
+  
+@keyframes logo_wiggle{
+    from{
+      width: 10%;
+    }
+    to{
+      width: 5%;
+    }
+} 
+  
+#logo{
+    margin-top: 10px;
+    display: block;
+    width: 5%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    -webkit-animation-name: logo_wiggle;
+            animation-name: logo_wiggle;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#graduate{
+    padding: 50px;
+    background-color: #EDEEF9;
+    text-align: left;
+    position: relative;
+    height: 100%;
+}
+
+#undergraduate{
+    padding: 50px;
+    background-color: #DBDDF1;
+    text-align: left;
+    position: relative;
+    height: 100%;
+}
+
+.text{
+    display:inline-block;;
+    white-space:nowrap;
+}
+
+#graduate p, #undergraduate p{
+    font-size: 18px;
+    margin-top: 1em;
+    font-family: Lato;
+    color: black;
+}
+
+#graduate h2, #undergraduate h2{
+    font-size: 28px;
+    font-family: Lato;
+    color: black;
+    margin: 1pt;
+}
+
+#graduate h3, #undergraduate h3{
+    font-size: 20px;
+    font-family: Lato;
+    font-style: italic;
+    color: darkgray;
+    margin: 1pt;
+}
+
+#graduate img{
+    margin-top: -1em;
+    width: 10%;
+    float: right;
+}
+
+#undergraduate img{
+    margin-top: -1em;
+    width: 10%;
+    float: right;
+}
+

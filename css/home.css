@@ -1,0 +1,100 @@
+@-webkit-keyframes logo_wiggle{
+    from{
+      width: 5%;
+    }
+    to{
+      width: 10%;
+    }
+}
+  
+@keyframes logo_wiggle{
+    from{
+      width: 5%;
+    }
+    to{
+      width: 10%;
+    }
+} 
+  
+#logo{
+    margin-top: 10px;
+    display: block;
+    width: 10%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    -webkit-animation-name: logo_wiggle;
+            animation-name: logo_wiggle;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 15px;
+}
+
+.greeting{
+    font-family: Dosis, Arial, Helvetica;
+    text-shadow: 10px 10px aliceblue;
+    -webkit-text-stroke-width: 1px; 
+    grid-column: 1/-1;
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+    font-size: 64pt;
+    color: black;
+}
+
+.self{
+    font-family: Lato, Arial, Helvetica;
+    text-shadow: 2px 2px #788;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+    font-size: 36pt;
+    color: black;
+}
+
+h1{ 
+    font-size: 3.5em; 
+}
+
+
+.self span {
+    display: block;
+    font-size: 1em;
+    opacity: .8;
+}
+  
+.self div {
+   position: fixed;
+    margin: 2vh 0;
+    opacity: 0;
+    left: 10vw;
+    width: 80vw;
+    animation: switch 18s ease-in infinite;
+}
+  
+.self div:nth-child(2) { animation-delay: 3s}
+.self div:nth-child(3) { animation-delay: 6s}
+.self div:nth-child(4) { animation-delay: 9s}
+.self div:nth-child(5) { animation-delay: 12s}
+.self div:nth-child(6) { animation-delay: 15s}
+
+  
+@keyframes switch {
+    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+    3% { opacity: 1;filter: blur(0); transform:scale(1)}
+    10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+    13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}

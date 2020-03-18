@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
-	<link href="css/ihover.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 	<title>About me</title>
@@ -13,109 +14,97 @@
 </head>
 
 <body>
-	
 	<a class = "skip" href="#skip">Skip to Main Content</a>
-	<main>
-		<header>
-			<img src="images/homepage/me.jpg" alt="logo" id = "logo">
-			<nav>
+	<header>
+		<img src="images/homepage/me.jpg" alt="mylogo" id = "logo">
+		<nav>
 			<ul class="nav_links">
-				<li class="nav_item"><a href="./index.html">home</a></li>
 				<li class="nav_item"><a href="./about.html">about</a></li>
+				<li class="nav_item"><a href="./project.html">projects</a></li>
 				<li class="nav_item"><a href="./courses.html">courses</a></li>
 				<li class="nav_item"><a href="./life.html">life</a></li>
-				<li class="nav_item"><a href="#">contact</a></li>
+				<li class="nav_item"><a href="./contact.html">contact</a></li>
 			</ul>
 		</nav>
-		</header>
-
+	</header>
+	<main id="skip">
 		<div class="container">
 			<div class="education">
-				<h2><a href="./education.html">My Education</a></h2>
+				<h1><a href="./education.html">My Education</a></h1>
 				<div class="education-image">
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src="images/about/UM.jpg" alt="University of Michigan" id = "UM-image">
 						<div class="info">
-							<h3>Univeristy of Michigan, Ann Arbor</h3>
-							<p>The University of Michigan, often simply referred to as Michigan, is a public research university in Ann Arbor, Michigan. The university is Michigan's oldest; it was founded in 1817 in Detroit, as the Catholepistemiad, or University of Michigania, 20 years before the territory became a state.</p>
+							<h2>Univeristy of Michigan, Ann Arbor</h2>
+							<p>The University of Michigan is a public research university in Ann Arbor, Michigan. It was founded in 1817 in Detroit, as the Catholepistemiad, or University of Michigania, 20 years before the territory became a state.</p>
 						</div></a>
 					</div>
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src = "images/about/SJTU.jpg" alt = "Shanghai Jiaotong Univeristy" id = "SJTU-image"/>
 						<div class="info">
-							<h3>Shanghai Jiao Tong University</h3>
-							<p>Shanghai Jiao Tong University is a major research university in Shanghai. Established on April 8, 1896 as Nanyang Public School by an imperial edict issued by the Guangxu Emperor, it has been referred to as "The MIT of the East" since the 1930s</p>
+							<h2>Shanghai Jiao Tong University</h2>
+							<p>Shanghai Jiao Tong University is a major research university in Shanghai. Established on April 8, 1896 as Nanyang Public School by an imperial edict issued by the Guangxu Emperor, it has been referred to as "The MIT of the East" since the 1930s.</p>
 						</div></a>
 					</div>	
 				</div>
 			</div>
 
 			<div class="skill">
-				<h2><a href="./skill.html">My Skills</a></h2>
+				<h1><a href="./skill.html">My Skills</a></h1>
 				<div class="skill-image">
 					
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src="images/about/datascience.jpg" alt="Data Science" id = "ds-image">
 						<div class="info">
-						<h3>Data Science</h3>
-						<p>Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. Data science is related to data mining and big data.</p>
+						<h2>Data Science</h2>
+						<p>Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. </p>
 						</div></a>
 					</div>
 					
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src = "images/about/machinelearning.jpeg" alt = "Machine Learning" id = "mlU-image"/>
 						<div class="info">
-							<h3>Machine Learning</h3>
-							<p>Machine learning is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence.</p>
+							<h2>Machine Learning</h2>
+							<p>Machine learning is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead.</p>
 						</div></a>
 					</div>
 
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src = "images/about/python.png" alt = "Python" id = "python-image"/>
 						<div class="info">
-							<h3>Python</h3>
-							<p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
+							<h2>Python</h2>
+							<p>Python is an interpreted, high-level, general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
 						</div></a>
 					</div>
-					<!-- <figure>
-						<a href="https://umich.edu/">
-							<img src="images/about/UM.jpg" alt="University of Michigan" id = "UM-image">
-						</a>
-						<figcaption> University of Michigan </figcaption>
-						<a href="http://en.sjtu.edu.cn/">
-							<img src = "images/about/SJTU.jpg" alt = "Shanghai Jiaotong Univeristy" id = "SJTU-image"/>
-						</a>
-						<figcaption> Shanghai Jiaotong University </figcaption>
-					</figure> -->
 					
 				</div>
 			</div>
 
 
 			<div class="interest">
-				<h2><a href="./interest.html">My Interests</a></h2>
+				<h1><a href="./interest.html">My Interests</a></h1>
 				<div class="interest-image">
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src="images/about/sports.jpg" alt="sports" id = "sports-image">
 						<div class="info">
-							<h3>Sports</h3>
-							<p>Emmm... I love basketball, soccer, badminton, ... and so on.</p>
+							<h2>Sports</h2>
+							<p>Emmm... I love basketball, soccer, badminton, ... and so on. Be free to contact me and play with me!</p>
 						</div></a>
 					</div>
 
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src = "images/about/popmusic.jpg" alt = "Pop music" id = "music-image"/>
 						<div class="info">
-							<h3>Pop Music</h3>
-							<p>I particularly enjoy Chinese pop music, but I also like some other forms of music like Bruce.</p>
+							<h2>Pop Music</h2>
+							<p>I particularly enjoy Chinese pop music, of those songs from Jay Chou, Leo Wang, etc. but I also like some other forms of music like Bruce.</p>
 						</div></a>
 					</div>
 
-					<div class="ih-item square effect15 left_to_right"><a href="#">
+					<div class="item square effect animation"><a href="#">
 						<img src = "images/about/cooking.jpg" alt = "Cooking" id = "cooking-image"/>
 						<div class="info">
-							<h3>Cooking</h3>
-							<p>Cooking is one of my daily life activities!</p>
+							<h2>Cooking</h2>
+							<p>Cooking is one of my daily life activities. You can see my life gallery and look for the dishes I make!</p>
 						</div></a>
 					</div>
 				</div>
@@ -124,9 +113,24 @@
 	</main>
 
 
-	<footer id = "contact">
-		<p>University of Michigan School of Information <br/>
-		  &copy; Yirui Gao yiruigao98@github.com</p>
+	<footer>
+		<div class="social">
+			<a href="https://www.facebook.com/yirui.gao.3" aria-label="fb"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/yirui_gao/" aria-label="ins"><i  class="fa fa-instagram"></i></a>
+			<a href="mailto:gaoyirui98@gmail.com" aria-label="email"><i class="fa fa-envelope"></i></a>
+			<a href="https://github.com/yiruigao98" aria-label="gh"><i class="fa fa-github"></i></a>
+		</div>
+		<div class="title">
+			<p class="links">
+				<a href="./index.html">Home</a>
+				<a href="./about.html">About</a>
+				<a href="./project.html">Projects</a>
+				<a href="./courses.html">Courses</a>
+				<a href="./life.html">Life</a>
+				<a href="./contact.html">Contact</a>
+			</p>
+			<p>Yirui Gao &copy; 2020</p>
+		</div>
 	</footer>	
 </body>
 

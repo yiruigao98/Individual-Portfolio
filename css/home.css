@@ -35,66 +35,125 @@
 .container{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 70% 30%;
     grid-row-gap: 15px;
+    min-height: 100%;
 }
 
 .greeting{
     font-family: Dosis, Arial, Helvetica;
-    text-shadow: 10px 10px aliceblue;
+    text-shadow: 5px 5px aliceblue;
     -webkit-text-stroke-width: 1px; 
     grid-column: 1/-1;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 2%;
     margin: auto;
-    font-size: 64pt;
+    font-size: 24pt;
     color: black;
 }
 
-.self{
-    font-family: Lato, Arial, Helvetica;
-    text-shadow: 2px 2px #788;
-    grid-column: 1/-1;
-    grid-row: 3/4;
+.greeting h1{
+    text-shadow: 10px 10px aliceblue;
+    -webkit-text-stroke-width: 1px; 
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
     margin: auto;
-    font-size: 36pt;
+    font-size: 48px;
     color: black;
 }
 
-h1{ 
-    font-size: 3.5em; 
+
+.self {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Didact Gothic';
+    color:#999;
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    bottom:15%;  
+    position:fixed;
+    width:100%;    
+}
+  
+#flip, #flip1, #flip2 {
+    font-size: 32px;
+    height:45px;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#flip {
+    grid-column: 0/1;
+}
+#flip1 {
+    grid-column: 1/2;
+}
+#flip2 {
+    grid-column: 2/3;
+}
+
+#flip > div > p, #flip1 > div > p, #flip2 > div > p {
+    display:inline-block;
+    color:#263B42;
+    padding: 0 10px 0 10px;
+    height:45px;
+    margin-bottom:45px;
+    border-radius: 10px;
 }
 
 
-.self span {
-    display: block;
-    font-size: 1em;
-    opacity: .8;
+#flip div:first-child {
+    animation: show 6s linear infinite;
 }
-  
-.self div {
-   position: fixed;
-    margin: 2vh 0;
-    opacity: 0;
-    left: 10vw;
-    width: 80vw;
-    animation: switch 18s ease-in infinite;
-}
-  
-.self div:nth-child(2) { animation-delay: 3s}
-.self div:nth-child(3) { animation-delay: 6s}
-.self div:nth-child(4) { animation-delay: 9s}
-.self div:nth-child(5) { animation-delay: 12s}
-.self div:nth-child(6) { animation-delay: 15s}
 
+#flip1 div:first-child {
+    animation: show 8s linear infinite;
+}
+
+#flip2 div:first-child {
+    animation: show 10s linear infinite;
+}
+
+#flip div p {
+    background:#add356;
+}
+#flip div:first-child p {
+    background:#ffcb52;
+}
+#flip div:last-child p {
+    background:#3dade9;
+}
+
+#flip1 div p {
+    background:#3dade9;
+}
+#flip1 div:first-child p {
+    background:#add356;
+}
+#flip1 div:last-child p {
+    background:#ffcb52;
+}
+
+#flip2 div p {
+    background:#ffcb52;
+}
+#flip2 div:first-child p {
+    background:#3dade9;
+}
+#flip2 div:last-child p {
+    background:#add356;
+}
   
-@keyframes switch {
-    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
-    3% { opacity: 1;filter: blur(0); transform:scale(1)}
-    10% { opacity: 1;filter: blur(0); transform:scale(.9)}
-    13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
-    80% { opacity: 0}
-    100% { opacity: 0}
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
 }

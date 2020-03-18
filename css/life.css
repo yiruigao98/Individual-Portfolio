@@ -1,0 +1,263 @@
+@-webkit-keyframes logo_wiggle{
+    from{
+      width: 10%;
+    }
+    to{
+      width: 5%;
+    }
+}
+  
+@keyframes logo_wiggle{
+    from{
+      width: 10%;
+    }
+    to{
+      width: 5%;
+    }
+} 
+  
+#logo{
+    margin-top: 10px;
+    display: block;
+    width: 5%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    -webkit-animation-name: logo_wiggle;
+            animation-name: logo_wiggle;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+h1{
+    font-size: 28px;
+    font-family: Lato;
+    color: #060926;
+    text-align: center;
+    margin: 20px;
+}
+
+.container p{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 18px;
+    font-family: Alegreya;
+    color: #060926;
+    justify-content: center;
+    margin: auto 0;
+}
+
+
+h2{
+    font-size: 20px;
+    font-family: Lato;
+    color: #060926;
+    text-align: center;
+    margin: 20px;
+}
+
+.campus{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    margin: 40px 0px 20px 20px;
+}
+
+.campus .texts{
+    justify-self: center;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.campus .texts > p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.campus_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 300px;
+}
+
+.campus_gallery > img{
+    border: 5px #50c7c7 solid;
+    margin: 10px;
+    width: 25%;
+}
+
+.campus_gallery > img:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.leisure{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    margin: 40px 0px 20px 20px;
+}
+
+.leisure .texts{
+    justify-self: center;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.leisure .texts > p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.leisure_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    min-height: 300px;
+}
+
+.leisure_gallery > img{
+    border: 5px #50c7c7 solid;
+    margin: 10px;
+    width: 40%;
+}
+
+.cooking{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    margin: 40px 0px 20px 20px;
+}
+
+.cooking .texts{
+    justify-self: center;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.cooking .texts > p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cooking_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.cooking_gallery > img{
+    border: 5px #50c7c7 solid;
+    margin: 10px;
+    width: 30%;
+}
+
+.football{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    margin: 40px 0px 20px 20px;
+}
+
+.football .texts{
+    justify-self: center;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.football .texts > p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.football_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.football_gallery > img{
+    border: 5px #50c7c7 solid;
+    margin: 10px;
+    width: 30%;
+}
+
+.southeast{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    margin: 40px 0px 20px 20px;
+}
+
+.southeast .texts{
+    justify-self: center;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.southeast .texts > p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.southeast_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    min-height: 300px;
+}
+
+.southeast_gallery > img{
+    border: 5px #50c7c7 solid;
+    margin: 10px;
+    width: 25%;
+}
+
+.nba{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    margin: 40px 0px 20px 20px;
+}
+
+.nba .texts{
+    justify-self: center;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.nba .texts > p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.nba_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    min-height: 300px;
+}
+
+.nba_gallery > img{
+    border: 5px #50c7c7 solid;
+    margin: 10px;
+    width: 25%;
+}

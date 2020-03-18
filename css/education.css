@@ -36,7 +36,9 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-bottom: 50px;
 }
+
 
 #graduate{
     padding: 50px;
@@ -63,33 +65,33 @@
     font-size: 18px;
     margin-top: 1em;
     font-family: Lato;
-    color: black;
+    color: #000;
+}
+
+#graduate h1, #undergraduate h1{
+    font-size: 28px;
+    font-family: Lato;
+    color: #000;
 }
 
 #graduate h2, #undergraduate h2{
-    font-size: 28px;
-    font-family: Lato;
-    color: black;
-    margin: 1pt;
-}
-
-#graduate h3, #undergraduate h3{
     font-size: 20px;
     font-family: Lato;
     font-style: italic;
-    color: darkgray;
-    margin: 1pt;
+    color: #3A393A;
+    margin-top: 5px;
 }
 
 #graduate img{
-    margin-top: -1em;
     width: 10%;
     float: right;
 }
 
 #undergraduate img{
-    margin-top: -1em;
     width: 10%;
     float: right;
 }
 
+img:hover{
+    opacity: .5;
+}

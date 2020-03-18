@@ -1,0 +1,224 @@
+@-webkit-keyframes logo_wiggle{
+    from{
+      width: 10%;
+    }
+    to{
+      width: 5%;
+    }
+}
+  
+@keyframes logo_wiggle{
+    from{
+      width: 10%;
+    }
+    to{
+      width: 5%;
+    }
+} 
+  
+#logo{
+    margin-top: 10px;
+    display: block;
+    width: 5%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    -webkit-animation-name: logo_wiggle;
+            animation-name: logo_wiggle;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+/* The following card effects is refered from https://codepen.io/highplainsdrifter/pen/qNZMLE with adjustment here*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+h1{
+    font-size: 24px;
+    font-family: Lato;
+    color: #060926;
+    justify-content: center;
+    margin: 30px;
+}
+
+.currentcourses{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+  
+.info {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    grid-column-gap: 5px;
+    width: 80%;
+    min-height: 140px;
+    background: rgba(171, 198, 207, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    justify-self: center;
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1), 3px 6px 10px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.block {
+    grid-column: 0/1;
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.block img{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    border: 2px solid  #EDEEF9;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1), 3px 6px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.texts {
+    grid-column: 2/-1;
+    width:90%;
+    position: relative;
+    padding-top: 10px;
+}
+
+.texts h2 {
+  font-family: Dosis;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #c0c1c3;
+}
+
+
+.one-text a{
+    color: #f46320;
+    text-decoration: none;
+}
+
+.one-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.two-text a{
+    color: #1F742E;
+    text-decoration: none;
+}
+
+.two-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.three-text a{
+    color: #1C6D94;
+    text-decoration: none;
+}
+
+.three-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.four-text a{
+    color: #721C94;
+    text-decoration: none;
+}
+
+.four-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.five-text a{
+    color: #A4AA14;
+    text-decoration: none;
+}
+
+.five-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.six-text a{
+    color: #E330DB;
+    text-decoration: none;
+}
+
+.six-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.seven-text a{
+    color: #3E124F;
+    text-decoration: none;
+}
+
+.seven-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.eight-text a{
+    color: #30E375;
+    text-decoration: none;
+}
+
+.eight-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.nine-text a{
+    color: #30C9E3;
+    text-decoration: none;
+}
+
+.nine-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+.ten-text a{
+    color: #E33B30;
+    text-decoration: none;
+}
+
+.ten-text a:focus{
+    color: #788;
+    text-decoration: none;
+}
+
+
+.texts p {
+    padding-top: 5px;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 13px;
+    position: absolute;
+    text-align: justify;
+    color: black;
+}
+
+
+
+
+

@@ -1,36 +1,3 @@
-@-webkit-keyframes logo_wiggle{
-    from{
-      width: 10%;
-    }
-    to{
-      width: 5%;
-    }
-}
-  
-@keyframes logo_wiggle{
-    from{
-      width: 10%;
-    }
-    to{
-      width: 5%;
-    }
-} 
-  
-#logo{
-    margin-top: 10px;
-    display: block;
-    width: 5%;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-    -webkit-animation-name: logo_wiggle;
-            animation-name: logo_wiggle;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-}
 
 .container{
     display: flex;
@@ -82,6 +49,7 @@
     margin-top: 5px;
 }
 
+
 #graduate img{
     width: 10%;
     float: right;
@@ -94,4 +62,19 @@
 
 img:hover{
     opacity: .5;
+}
+
+/* Mobile view */
+@media (max-width: 800px) {
+    #graduate p, #undergraduate p{
+        font-size: auto;
+    }
+    
+    #graduate h1, #undergraduate h1{
+        font-size: auto;
+    }
+    
+    #graduate h2, #undergraduate h2{
+        font-size: auto;
+    }
 }

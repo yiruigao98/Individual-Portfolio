@@ -68,7 +68,7 @@ h2{
 
 .campus{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 68%;
     grid-column-gap: 10px;
     margin: 40px 0px 20px 20px;
 }
@@ -92,19 +92,19 @@ h2{
 }
 
 .campus_gallery > img{
-    border: 5px #50c7c7 solid;
+    border: 3px rgba(171, 198, 207, 0.5) solid;
     margin: 10px;
     width: 25%;
 }
 
 .campus_gallery > img:hover{
     -webkit-transform: scale(1.3);
-	transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .leisure{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 68%;
     grid-column-gap: 10px;
     margin: 40px 0px 20px 20px;
 }
@@ -129,14 +129,19 @@ h2{
 }
 
 .leisure_gallery > img{
-    border: 5px #50c7c7 solid;
+    border: 3px rgba(171, 198, 207, 0.5) solid;
     margin: 10px;
     width: 40%;
 }
 
+.leisure_gallery > img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 .cooking{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 68%;
     grid-column-gap: 10px;
     margin: 40px 0px 20px 20px;
 }
@@ -161,14 +166,23 @@ h2{
 }
 
 .cooking_gallery > img{
-    border: 5px #50c7c7 solid;
+    border: 3px rgba(171, 198, 207, 0.5) solid;
     margin: 10px;
-    width: 30%;
+    width: 33%;
+    -webkit-filter: grayscale(60%);
+	filter: grayscale(60%);
+	transition: 1s;
+}
+
+.cooking_gallery > img:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
 }
 
 .football{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 68%;
     grid-column-gap: 10px;
     margin: 40px 0px 20px 20px;
 }
@@ -193,14 +207,19 @@ h2{
 }
 
 .football_gallery > img{
-    border: 5px #50c7c7 solid;
+    border: 3px rgba(171, 198, 207, 0.5) solid;
     margin: 10px;
-    width: 30%;
+    width: 33%;
+}
+
+.football_gallery > img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .southeast{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 68%;
     grid-column-gap: 10px;
     margin: 40px 0px 20px 20px;
 }
@@ -220,19 +239,27 @@ h2{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
     min-height: 300px;
 }
 
 .southeast_gallery > img{
-    border: 5px #50c7c7 solid;
+    border: 3px rgba(171, 198, 207, 0.5) solid;
     margin: 10px;
     width: 25%;
+    -webkit-filter: sepia(60%);
+    filter: sepia(60%);
+    transition: 1s;
+}
+
+.southeast_gallery > img:hover{
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+	filter: none;
 }
 
 .nba{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 68%;
     grid-column-gap: 10px;
     margin: 40px 0px 20px 20px;
 }
@@ -257,7 +284,16 @@ h2{
 }
 
 .nba_gallery > img{
-    border: 5px #50c7c7 solid;
+    border: 3px rgba(171, 198, 207, 0.5) solid;
     margin: 10px;
     width: 25%;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+    transition: 1s;
+}
+
+.nba_gallery > img:hover{
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+    filter: none;
 }

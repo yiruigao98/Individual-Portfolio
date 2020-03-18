@@ -146,3 +146,45 @@ footer p.links a:hover{
 .fa {
     border-radius: 50%;
 }
+
+@-webkit-keyframes logo_wiggle{
+    from{
+      width: 5%;
+    }
+    to{
+      width: 10%;
+    }
+}
+  
+@keyframes logo_wiggle{
+    from{
+      width: 5%;
+    }
+    to{
+      width: 10%;
+    }
+} 
+  
+#logo{
+    margin-top: 10px;
+    display: block;
+    width: 10%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    -webkit-animation-name: logo_wiggle;
+            animation-name: logo_wiggle;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+/* Reduce animation */
+@media screen and (prefers-reduced-motion: reduce){
+    #logo{
+        -webkit-animation: none;
+                animation: none;
+    }
+}

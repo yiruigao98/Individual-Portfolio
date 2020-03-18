@@ -132,6 +132,10 @@ h1{
     text-decoration: none;
 }
 
+.coursefour{
+    background-color: #721C94;
+}
+
 .four-text a:focus{
     color: #788;
     text-decoration: none;
@@ -140,6 +144,10 @@ h1{
 .five-text a{
     color: #A4AA14;
     text-decoration: none;
+}
+
+.coursefive{
+    background-color: #A4AA14;
 }
 
 .five-text a:focus{
@@ -231,6 +239,10 @@ h1{
     transform: rotateY(180deg);
 }
   
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -254,6 +266,23 @@ h1{
     .currentcourses{
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto auto;
+    }
+}
+
+/* Tiny view */
+@media (max-width: 500px) {
+    .block h2{
+        font-size: 16px;
+    }
+    
+    .block p{
+        font-size: 12px;
+    }
+    .texts h2{
+        font-size: 16px;
+    }
+    .texts p{
+        font-size: 12px;
     }
 }
 

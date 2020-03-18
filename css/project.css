@@ -1,37 +1,3 @@
-@-webkit-keyframes logo_wiggle{
-    from{
-      width: 10%;
-    }
-    to{
-      width: 5%;
-    }
-}
-  
-@keyframes logo_wiggle{
-    from{
-      width: 10%;
-    }
-    to{
-      width: 5%;
-    }
-} 
-  
-#logo{
-    margin-top: 10px;
-    display: block;
-    width: 5%;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-    -webkit-animation-name: logo_wiggle;
-            animation-name: logo_wiggle;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-}
-
 .container{
   display: flex;
   flex-direction: column;
@@ -72,8 +38,10 @@ h1{
   justify-content: center;
   text-align: center;
   margin: 25px;
-  text-shadow: 2px 2px 5px;
+  letter-spacing: .05em;
+  text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.2);
 }
+
 
 .block1 .image {
   opacity: 1;
@@ -105,19 +73,24 @@ h1{
   transition: .3s ease;
   opacity: 0;
   position: absolute;
+  width: 60%;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
   -ms-transform: translate(-50%, -30%);
   text-align: center;
+  margin-bottom: auto;
+  
 }
 
 .block2 .middle {
   transition: .3s ease;
   opacity: 0;
   position: absolute;
+  width: 80%;
   top: 20%;
   left: 50%;
+  bottom: 20%;
   transform: translate(-50%, -20%);
   -ms-transform: translate(-50%, -20%);
   text-align: center;
@@ -135,7 +108,7 @@ h1{
   background-color: #EDEEF9;
   color: black;
   font-size: 14px;
-  padding: 10% 10%;
+  padding: 5% 5%;
   margin-left: 5px;
   text-align: left;
 }
@@ -162,4 +135,38 @@ h1{
 
 .cell h2, .character h2, .penguin h2, .fashion h2, .laptop h2, .happiness h2{
   margin-bottom: 20px;
+}
+
+/* Tablet view */
+@media (min-width: 800px) and (max-width: 950px) {
+  .block2{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin: 10px 50px 20px;
+  }
+  .block1 .image {
+    width: 90%;
+  }
+  .block1 .middle {
+    width: 80%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 800px) {
+  .block1, .block2{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin: 10px 50px 20px;
+  }
+  .block1 .image {
+    width: 90%;
+  }
+  .block1 .middle {
+    width: 80%;
+  }
 }

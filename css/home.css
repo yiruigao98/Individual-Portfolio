@@ -6,16 +6,6 @@
     }
 }
 
-@media (min-width: 750px) and (max-width: 950px) {
-
-    
-}
-
-@media (max-width: 750px) {
-    
-    
-}
-
 .container{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -60,13 +50,34 @@
     position:fixed;
     width:100%;    
 }
-  
+
+
+
 #flip, #flip1, #flip2 {
     font-size: 32px;
     height:45px;
     overflow:hidden;
     align-items: center;
     justify-content: center;
+}
+
+/* Mobile view */
+@media (max-width: 800px) {
+    .self {
+        flex-direction: column;   
+        bottom:10%; 
+    }  
+    #flip, #flip1, #flip2 {
+        height:30px;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    #flip > div > p, #flip1 > div > p, #flip2 > div > p {
+        height:30px;
+        margin-bottom:30px;
+        border-radius: 10px;
+    }
+    
 }
 
 #flip {
